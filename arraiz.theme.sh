@@ -46,7 +46,7 @@ function prompt_setter() {
   history -r
   PS1="
 $(scm_char) [${THEME_PROMPT_HOST_COLOR}\u$reset_color] $(virtualenv_prompt)$(ruby_version_prompt)\w
-$(doubletime_scm_prompt)$reset_color $ "
+🐓 ${green}↪ $(doubletime_scm_prompt)$reset_color"
   PS2='> '
   PS4='+ '
 }
@@ -70,4 +70,3 @@ git_prompt_status() {
   echo "[$git_status${normal}]"
 
 }
-  
